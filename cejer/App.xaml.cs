@@ -2,23 +2,22 @@
 
 namespace cejer
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
+ 
 
     using Xamarin.Forms;
     using Views;
     public partial class App : Application
 	{
-		public App ()
+        #region Constructor
+        public App ()
 		{
 			InitializeComponent();
 
-			MainPage = new InicioPage();
+			this.MainPage = new NavigationPage( new InicioPage());
 		}
-
-		protected override void OnStart ()
+        #endregion
+        #region Methods
+        protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}
@@ -32,5 +31,6 @@ namespace cejer
 		{
 			// Handle when your app resumes
 		}
-	}
+        #endregion
+    }
 }
