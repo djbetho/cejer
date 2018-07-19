@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cejer.Views.InicioPage">
+    <ContentPage.Content>
+        <ScrollView>
+             
+                <StackLayout
+                    Margin="40,0"
+                    Orientation="Vertical"
+                    VerticalOptions="CenterAndExpand">
+                <Image
+                    Source="cejer"
+                    WidthRequest="200">
+                </Image>
+                <Button
+                        BackgroundColor="Navy"
+                        BorderRadius="23"
+                        
+                        HeightRequest="46"
+                        VerticalOptions="FillAndExpand"
+                        
+                        Text="Comprar Pasaje"
+                        TextColor="White">
+                    </Button>
+                    <Button
+                        BackgroundColor="Purple"
+                        BorderRadius="23"
+                        
+                        HeightRequest="46"
+                        VerticalOptions="FillAndExpand"
+                        
+                        Text="Mis Pasajes"
+                        TextColor="White">
+                    </Button>
+                </StackLayout>
+           
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
