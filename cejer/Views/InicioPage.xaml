@@ -20,7 +20,7 @@
                     BorderRadius="23"
                     HeightRequest="46"
                     VerticalOptions="FillAndExpand"
-                    Command="{Binding Comprar}"                        
+                    Command="{Binding ComprarCommand}"                        
                     Text="Comprar Pasaje"
                     TextColor="White">
                 </Button>
