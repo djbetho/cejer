@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="cejer.Views.InicioPage">
+             x:Class="cejer.Views.InicioPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
-        <ScrollView>
-             
-                <StackLayout
+        <ScrollView
+            BindingContext="{Binding Inicio}">
+
+            <StackLayout
                     Margin="40,0"
                     Orientation="Vertical"
                     VerticalOptions="CenterAndExpand">
                 <Image
                     Source="cejer"
                     WidthRequest="200">
-                </Image>
+                 </Image>
                 <Button
-                        BackgroundColor="Navy"
-                        BorderRadius="23"
-                        
-                        HeightRequest="46"
-                        VerticalOptions="FillAndExpand"
-                        
-                        Text="Comprar Pasaje"
-                        TextColor="White">
-                    </Button>
-                    <Button
-                        BackgroundColor="Purple"
-                        BorderRadius="23"
-                        
-                        HeightRequest="46"
-                        VerticalOptions="FillAndExpand"
-                        
-                        Text="Mis Pasajes"
-                        TextColor="White">
-                    </Button>
-                </StackLayout>
+                    BackgroundColor="Navy"
+                    BorderRadius="23"
+                    HeightRequest="46"
+                    VerticalOptions="FillAndExpand"
+                    Command="{Binding Comprar}"                        
+                    Text="Comprar Pasaje"
+                    TextColor="White">
+                </Button>
+                <Button
+                    BackgroundColor="Purple"
+                    BorderRadius="23"
+                    HeightRequest="46"
+                    VerticalOptions="FillAndExpand"
+                    Command="{Binding Pasajes}"
+                    Text="Mis Pasajes"
+                    TextColor="White">
+                </Button>
+            </StackLayout>
            
         </ScrollView>
     </ContentPage.Content>
