@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cejer.Views.BusquedaPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Busqueda">
+    <ContentPage.Content>
+        <StackLayout 
+            BindingContext="{Binding Busqueda}"
+            Padding="5">
+            <Label Text="Busqueda de Boletos!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
